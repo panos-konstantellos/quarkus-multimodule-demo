@@ -1,6 +1,4 @@
-package gr.devnt.quarkus.demo.data;
-
-
+package gr.devnt.quarkus.demo.domain;
 import lombok.*;
 
 @Getter

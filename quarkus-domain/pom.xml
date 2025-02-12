@@ -10,30 +10,12 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>quarkus-data</artifactId>
-    <name>Quarkus Data Library</name>
-    <description>Quarkus data module</description>
-
-    <dependencies>
-        <dependency>
-            <groupId>gr.devnt.quarkus-demo</groupId>
-            <artifactId>quarkus-domain</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <!-- Quarkus -->
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-hibernate-orm-panache</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-jdbc-h2</artifactId>
-        </dependency>
-    </dependencies>
-
+    <artifactId>quarkus-domain</artifactId>
+    <name>Quarkus Domain Library</name>
+    <description>Quarkus domain module</description>
 
     <build>
-        <finalName>quarkus-data</finalName>
+        <finalName>quarkus-domain</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>quarkus-domain</module>
         <module>quarkus-data</module>
         <module>quarkus-web</module>
     </modules>

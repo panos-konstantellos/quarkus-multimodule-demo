@@ -1,5 +1,6 @@
 package gr.devnt.quarkus.demo.data;
 
+import gr.devnt.quarkus.demo.domain.UserService;
 import io.quarkus.test.InjectMock;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
@@ -22,11 +23,11 @@ class UserServiceTest {
     void setUp() {
         Mockito
                 .when(userRepository.findByIdOptional("1"))
-                .thenReturn(Optional.of(User.builder()
-                        .id("1")
-                        .username("test")
-                        .email("test@test.org")
-                        .build()));
+                .thenReturn(Optional.of(new UserEntity() {{
+                    setId("1");
+                    setUsername("test");
+                    setEmail("test@test.org");
+                }}));
     }
 
     @Test
