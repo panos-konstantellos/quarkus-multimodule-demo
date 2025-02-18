@@ -31,7 +31,6 @@
         </dependency>
     </dependencies>
 
-
     <build>
         <finalName>quarkus-data</finalName>
         <plugins>
@@ -50,5 +49,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
